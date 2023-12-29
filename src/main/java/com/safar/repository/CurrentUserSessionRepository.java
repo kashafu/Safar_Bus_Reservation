@@ -10,5 +10,5 @@ import org.springframework.stereotype.Repository;
 @EnableScan
 @Repository
 public interface CurrentUserSessionRepository extends PagingAndSortingRepository<CurrentUserSession, Integer> {
-    public CurrentUserSession findByUuid(Integer uuid);
+    public CurrentUserSession findByUuid(String uuid);
 }

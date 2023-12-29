@@ -21,6 +21,10 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
+    @GetMapping("/hello")
+    public ResponseEntity<?> hello()  {
+        return new ResponseEntity<>("hello", HttpStatus.OK);
+    }
 
     @PostMapping("/admin/register")
     public ResponseEntity<Admin> registerAdmin(@Valid @RequestBody Admin admin) throws DataNotFoundException {
