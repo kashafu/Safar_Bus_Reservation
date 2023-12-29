@@ -1,0 +1,9 @@
+# AWS properties
+aws:
+  access-key: AKIAQ6EXD5YUCT5O2FCV
+  secret-key: 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
+  region: eu-north-1
+  endpoint: dynamodb.eu-north-1.amazonaws.com
+
+server:
+  port: 8080
